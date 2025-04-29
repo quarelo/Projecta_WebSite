@@ -27,7 +27,7 @@
 
 /* Home */
 
-.home-banner{
+.home-banner {
     border-radius: 15px;
 
     margin-top: 20px;
@@ -45,7 +45,7 @@
     position: relative;
 }
 
-.home-banner h1{
+.home-banner h1 {
     font-family: MontserratBold;
 
     color: #ffffff;
@@ -54,7 +54,7 @@
     text-transform: uppercase;
 }
 
-.home-banner .home-text{
+.home-banner .home-text {
     border: 1px solid #15609550;
     background-color: #09304C50;
 
@@ -76,7 +76,7 @@
     justify-content: space-around;
 }
 
-.home-banner .home-text p{
+.home-banner .home-text p {
     margin-left: 15px;
 
     font-family: Poppins;
@@ -84,29 +84,41 @@
     font-size: 16px;
 }
 
-.home-banner .home-text button{
+.home-banner .home-text button {
     margin-left: 10px;
 
     background-color: #155F95;
     border: none;
 
-    padding: 10px;
+    padding: 10px 15px 10px 10px;
 
-    border-radius: 15px;
+    border-radius: 10px;
 
     font-family: Poppins;
     color: #ffffff;
     font-size: 16px;
+
+    cursor: pointer;
 }
 
-.home-about{
+.home-banner .home-text button:hover {
+    background-color: #0f6cad !important;
+}
+
+.home-banner .home-text button .seta {
+    margin-left: 8px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.home-about {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-.home-about .about-text{
+.home-about .about-text {
     width: 45%;
 
     display: flex;
@@ -114,7 +126,7 @@
     justify-content: space-evenly;
 }
 
-.home-about .about-text h3{
+.home-about .about-text h3 {
     font-family: MontserratLight;
     font-size: 20px;
 
@@ -122,7 +134,7 @@
     color: black;
 }
 
-.home-about .about-text h1{
+.home-about .about-text h1 {
     font-family: MontserratBold;
     font-size: 40px;
 
@@ -130,27 +142,136 @@
     color: #155F95;
 }
 
-.home-about .about-text p{
+.home-about .about-text p {
     font-family: Poppins;
     font-size: 16px;
 
     color: black;
 }
 
-.home-about .about-text button{
+.home-about .about-text button {
     width: 30%;
     background-color: #155F95;
     border: none;
 
     padding: 10px;
 
-    border-radius: 15px;
+    border-radius: 10px;
 
     font-family: Poppins;
     color: #ffffff;
     font-size: 16px;
+
+    cursor: pointer;
 }
 
-.home-about #about{
+.home-about .about-text button:hover {
+    background-color: #0f6cad !important;
+}
+
+.home-about .about-text button .seta {
+    margin-left: 8px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.home-about #about {
     width: 50%;
+}
+
+.home-services{
+    margin-top: 30px;
+}
+
+.home-services h2{
+    font-family: Montserrat;
+    font-size: 30px;
+
+    color: black;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    grid-template-areas:
+        "a b e"
+        "c b d";
+}
+
+.service[data-id="1"] {
+    grid-area: a;
+}
+
+.service[data-id="2"] {
+    grid-area: c;
+}
+
+.service[data-id="3"] {
+    grid-area: b;
+}
+
+/* Ocupa duas linhas */
+.service[data-id="4"] {
+    grid-area: d;
+}
+
+.service[data-id="5"] {
+    grid-area: e;
+}
+
+.service {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+
+    transition: transform 0.3s ease;
+
+    cursor: pointer;
+}
+
+.service:hover{
+    transform: scale(1.02);
+}
+
+.service .text {
+    font-size: 20px;
+
+    font-family: MontserratBold;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+}
+
+.service .icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #155F95;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.85);
+}
+
+.service .icon:hover{
+    background-color: #0f6cad !important;
 }
