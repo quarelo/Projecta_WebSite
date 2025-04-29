@@ -1,0 +1,156 @@
+/* Fonts */
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf);
+}
+
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+/* Home */
+
+.home-banner{
+    border-radius: 15px;
+
+    margin-top: 20px;
+
+    background-image: url(../assets/images/home_banner_01.svg);
+    object-fit: fill;
+
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.home-banner h1{
+    font-family: MontserratBold;
+
+    color: #ffffff;
+    font-size: 80px;
+
+    text-transform: uppercase;
+}
+
+.home-banner .home-text{
+    border: 1px solid #15609550;
+    background-color: #09304C50;
+
+    border-radius: 15px;
+
+    width: 30%;
+    height: 200px;
+
+    position: absolute;
+
+    bottom: 20px;
+    left: 20px;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.home-banner .home-text p{
+    margin-left: 15px;
+
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.home-banner .home-text button{
+    margin-left: 10px;
+
+    background-color: #155F95;
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.home-about{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.home-about .about-text{
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.home-about .about-text h3{
+    font-family: MontserratLight;
+    font-size: 20px;
+
+    text-transform: uppercase;
+    color: black;
+}
+
+.home-about .about-text h1{
+    font-family: MontserratBold;
+    font-size: 40px;
+
+    text-transform: uppercase;
+    color: #155F95;
+}
+
+.home-about .about-text p{
+    font-family: Poppins;
+    font-size: 16px;
+
+    color: black;
+}
+
+.home-about .about-text button{
+    width: 30%;
+    background-color: #155F95;
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.home-about #about{
+    width: 50%;
+}
