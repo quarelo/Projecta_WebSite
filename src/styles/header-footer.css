@@ -15,8 +15,18 @@
 }
 
 @font-face {
+    font-family: MontserratMedium;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
     font-family: Poppins;
     src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url(../assets/fonts/Poppins/Poppins-ExtraLight.ttf);
 }
 
 /* Reset */
@@ -80,3 +90,129 @@ body {
 
     color: #155F95;
 }
+
+/* FOOTER */
+
+footer{
+    background-color: #0A3859;
+
+    width: 100vw;
+    height: 400px;
+
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .footer-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-section .footer-links{
+    justify-content: space-between;
+    width: 50%;
+}
+
+footer .footer-section .footer-links #logo{
+    width: 150px;
+}
+
+footer .footer-section .footer-nav{
+    display: flex;
+    height: 60%;
+
+    margin-top: 10px;
+}
+
+footer .footer-section .footer-nav nav{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-section .footer-nav nav h4{
+    font-family: Montserrat;
+    font-size: 20px;
+    color: white;
+
+    margin-bottom: 10px;
+}
+
+footer .footer-section .footer-nav nav a{
+    font-family: Poppins;
+    font-size: 14px;
+    color: white;
+
+    text-decoration: none;
+
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-section .footer-links .nav-midia h4{
+    font-family: Montserrat;
+    font-size: 20px;
+    color: white;
+
+    margin-bottom: 10px;
+}
+
+footer .footer-section .footer-nav nav a img{
+    margin-right: 10px;
+
+    width: 20px;
+}
+
+footer .footer-section .footer-links .nav-midia nav{
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+
+    margin-top: 10px;
+}
+
+footer .footer-section .footer-text{
+    display: flex;
+    align-items: start;
+
+    width: 55%;
+    height:50%;
+}
+
+footer .footer-section .footer-text img{
+    width: 300px;
+}
+
+footer .footer-section .footer-text .contactUs h3{
+    font-family: Poppins;
+    font-size: 30px;
+
+    color: white;
+}
+
+footer .footer-section .footer-text .contactUs p{
+    font-family: Poppins;
+    font-size: 12px;
+
+    color: white;
+}
+
+footer .copyright{
+    font-family: PoppinsLight;
+    font-size: 12px;
+
+    color: white;
+
+    width: 100%;
+    text-align: center;
+
+    border-top: 1px solid #FFFFFF50;
+
+    padding-top: 15px;
+}
+
