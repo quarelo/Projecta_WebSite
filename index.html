@@ -23,14 +23,33 @@
         </div>
     </header>
 
-    <section class="home-banner layout-grid">
-        <h1>Interiores</h1>
-        <div class="home-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit ultricies diam hendrerit
-                fringilla. Etiam facilisis ligula vel suscipit mollis.</p>
-            <button>Entre em Contato<span class="seta">&#8594;</span></button>
+    <div class="carousel-container layout-grid">
+        <div class="carousel">
+            <div class="carousel-slide" style="background-image: url('./src/assets/images/home_banner_01.svg')">
+                <h1>Interiores</h1>
+                <div class="slide-overlay">
+                    <p>Projeto de ambientação que personaliza espaços com marcenaria, mobiliário, revestimentos e iluminação</p>
+                    <button>Saiba Mais<span class="seta">&#8594;</span></button>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('./src/assets/images/home-banner_02.jpg')">
+                <h1>Projetos Arquitetônicos</h1>
+                <div class="slide-overlay">
+                    <p>Projeto arquitetônico que integra estética, funcionalidade e adequação às normas, atendendo às demandas do cliente.</p>
+                    <button>Saiba Mais <span class="seta">&#8594;</span></button>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('./src/assets/images/home-banner_03.jpg')">
+                <h1>Paisagismo</h1>
+                <div class="slide-overlay">
+                    <p>Projeto paisagístico que harmoniza arquitetura e perfil do cliente, promovendo humanização por meio da vegetação.</p>
+                    <button>Saiba Mais <span class="seta">&#8594;</span></button>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="carousel-indicators">
+        </div>
+    </div>
 
     <section class="home-about layout-grid">
         <img id="about" src="/src/assets/images/home_aboutSection.svg" alt="Imagem da secretaria da Projecta">
@@ -38,10 +57,7 @@
         <div class="about-text">
             <h3>Bem-Vindo</h3>
             <h1>Somos a Projecta <br> Projetos e <br> Construção</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit ultricies diam hendrerit
-                fringilla. Etiam facilisis ligula vel suscipit mollis. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Etiam suscipit ultricies diam hendrerit fringilla. Etiam facilisis ligula vel suscipit
-                mollis.</p>
+            <p>Com sede em Socorro e Serra Negra localizadas no Circuitos das Águas Paulista, a Projecta conta com uma equipe multidisciplinar qualificada e à disposição para te atender cada vez melhor e de forma mais completa na realização do seu sonho.</p>
             <button>Saiba Mais<span class="seta">&#8594;</span></button>
         </div>
     </section>
@@ -58,7 +74,7 @@
                 <div class="icon">↗</div>
             </div>
             <div class="service" data-id="3" style="background-image: url('./src/assets/images/obras.svg')">
-                <div class="text">EXECUÇÃO  <br>DE OBRAS</div>
+                <div class="text">EXECUÇÃO <br>DE OBRAS</div>
                 <div class="icon">↗</div>
             </div>
             <div class="service" data-id="4" style="background-image: url('./src/assets/images/estrutural.svg')">
@@ -75,23 +91,30 @@
     <footer>
         <div class="layout-grid footer-section">
             <div class="footer-links">
-                <a href="/index.html"><img id="logo" src="/src/assets/images/negative_logotipo.svg" alt="Logo Projecta"></a>
-    
+                <a href="/index.html"><img id="logo" src="/src/assets/images/negative_logotipo.svg"
+                        alt="Logo Projecta"></a>
+
                 <div class="footer-nav">
                     <nav>
                         <h4>Contato</h4>
-                        <a href="/src/pages/sobre_nos.html"><img src="/src/assets/images/phone_icon.svg" alt="">(19) 2042-4416</a>
-                        <a href="/src/pages/produtos.html"><img src="/src/assets/images/mail_icon.svg" alt="">contato@projetosprojecta.com.br</a>
-                        <a href="/src/pages/equipe.html"><img src="/src/assets/images/map_icon.svg" alt="">Rua José Conti, No. 20 - Centro - Socorro, SP</a>
-                        <a href="/src/pages/contato.html"><img src="/src/assets/images/map_icon.svg" alt="">Sala 236, 2º andar, Oscar Plaza Shopping 
-                           <br> Rua Pedro Vieira e Silva, No. 100 - Serra Negra, SP</a>
+                        <a href="/src/pages/sobre_nos.html"><img src="/src/assets/images/phone_icon.svg" alt="">(19)
+                            2042-4416</a>
+                        <a href="/src/pages/produtos.html"><img src="/src/assets/images/mail_icon.svg"
+                                alt="">contato@projetosprojecta.com.br</a>
+                        <a href="/src/pages/equipe.html"><img src="/src/assets/images/map_icon.svg" alt="">Rua José
+                            Conti, No. 20 - Centro - Socorro, SP</a>
+                        <a href="/src/pages/contato.html"><img src="/src/assets/images/map_icon.svg" alt="">Sala 236, 2º
+                            andar, Oscar Plaza Shopping
+                            <br> Rua Pedro Vieira e Silva, No. 100 - Serra Negra, SP</a>
                     </nav>
-    
+
                     <div class="nav-midia">
                         <h4>Rede Sociais</h4>
                         <nav>
-                            <a href="/src/pages/sobre_nos.html"><img src="/src/assets/images/instagram_icon.svg" alt="" style="width: 30px; margin-right: 15px;"></a>
-                            <a href="/src/pages/produtos.html"><img src="/src/assets/images/facebook_icon.svg" alt="" style="width: 17px;"></a>
+                            <a href="/src/pages/sobre_nos.html"><img src="/src/assets/images/instagram_icon.svg" alt=""
+                                    style="width: 30px; margin-right: 15px;"></a>
+                            <a href="/src/pages/produtos.html"><img src="/src/assets/images/facebook_icon.svg" alt=""
+                                    style="width: 17px;"></a>
                         </nav>
                     </div>
                 </div>
@@ -100,7 +123,7 @@
             <div class="footer-text">
                 <div class="contactUs">
                     <h3>Converse conosco</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit ultricies diam hendrerit fringilla. Etiam facilisis ligula vel suscipit mollis. </p>
+                    <p>Estamos prontos para transformar suas ideias em realidade. Entre em contato e descubra como podemos colaborar no seu projeto. </p>
                 </div>
 
                 <img src="/src/assets/images/footer_image.svg" alt="">
@@ -110,6 +133,7 @@
         <h5 class="copyright">© Copyright © Projetos Projecta, Todos os Direitos Reservados.</h5>
     </footer>
 
+    <script src="/src/scripts/script.js"></script>
 </body>
 
 </html>

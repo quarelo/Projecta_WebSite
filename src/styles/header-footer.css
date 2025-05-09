@@ -197,7 +197,11 @@ footer .footer-section .footer-text .contactUs h3{
 
 footer .footer-section .footer-text .contactUs p{
     font-family: Poppins;
-    font-size: 12px;
+    font-size: 14px;
+
+    padding-right: 15px;
+
+    text-align: justify;
 
     color: white;
 }

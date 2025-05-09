@@ -1,0 +1,260 @@
+/* Fonts */
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf);
+}
+
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
+/* Home */
+
+.title-page {
+    margin-top: 20px;
+
+    width: 100vw;
+    height: 200px;
+
+    background-image: url(./../assets/images/about_title.svg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.title-page h1{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    font-family: MontserratBold;
+
+    color: #ffffff;
+    font-size: 80px;
+
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-us .about-text {
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-us .about-text h3 {
+    font-family: MontserratLight;
+    font-size: 20px;
+
+    text-transform: uppercase;
+    color: black;
+}
+
+.about-us .about-text h1 {
+    font-family: MontserratBold;
+    font-size: 30px;
+
+    text-transform: uppercase;
+    color: #155F95;
+}
+
+.about-us .about-text p {
+    font-family: Poppins;
+    font-size: 16px;
+
+    color: black;
+}
+
+.about-us .about-text p span{
+    font-family: Poppins;
+    font-size: 14px;
+
+    color: rgb(36, 35, 35);
+}
+
+
+.about-us .about-text button {
+    width: 40%;
+    background-color: #155F95;
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.about-us .about-text button:hover {
+    background-color: #0f6cad !important;
+}
+
+.about-us .about-text button .seta {
+    margin-left: 8px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.about-us #about {
+    width: 50%;
+}
+
+
+.mvv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 20px;
+} 
+.mvv .mission{
+    width: 22%;
+    height: 180px;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    background-color: #155F95;
+} 
+
+.mvv .mission h3{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-family: MontserratSemiBold;
+    font-size: 20px;
+
+    text-transform: uppercase;
+    color: white;
+
+    margin: 0px 0px 0px 5px;
+} 
+
+.mvv .mission p{
+    font-family: PoppinsLight;
+    font-size: 16px;
+
+    color: white;
+    margin-top: 10px;
+
+    text-align: justify;
+
+    padding: 0px 15px 0px 10px;
+} 
+
+.mvv .vision{
+    width: 22%;
+    height: 180px;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    background-color: white;
+
+    border: 2px solid #155F95;
+} 
+
+.mvv .vision h3{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-family: MontserratSemiBold;
+    font-size: 20px;
+
+    text-transform: uppercase;
+    color: #155F95;
+
+    margin: 0px 0px 0px 5px;
+} 
+
+.mvv .vision p{
+    font-family: Poppins;
+    font-size: 16px;
+
+    color: #155F95;
+    margin-top: 10px;
+
+    text-align: justify;
+
+    padding: 0px 10px 0px 10px;
+} 
+
+.mvv .values{
+    width: 22%;
+    height: 180px;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    background-color: #155F95;
+} 
+
+.mvv .values h3{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-family: MontserratSemiBold;
+    font-size: 20px;
+
+    text-transform: uppercase;
+    color: white;
+
+    margin: 0px 0px 0px 5px;
+} 
+
+.mvv .values ul {
+    list-style-type: disc; 
+    padding-left: 10px;
+    margin-top: 5px;   
+    margin-left: 18px;  
+}
+
+.mvv .values ul li {
+    font-family: PoppinsLight;
+    font-size: 14px;
+    color: white;
+}
