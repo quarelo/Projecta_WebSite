@@ -40,14 +40,14 @@
 
     background-image: url(./../assets/images/about_title.svg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
 
     display: flex;
     align-items: center;
 }
 
-.title-page h1{
+.title-page h1 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -57,7 +57,7 @@
     color: #ffffff;
     font-size: 80px;
 
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .about-us {
@@ -99,7 +99,7 @@
     color: black;
 }
 
-.about-us .about-text p span{
+.about-us .about-text p span {
     font-family: Poppins;
     font-size: 14px;
 
@@ -140,14 +140,15 @@
 }
 
 
-.mvv{
+.mvv {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     margin-top: 20px;
-} 
-.mvv .mission{
+}
+
+.mvv .mission {
     width: 22%;
     height: 180px;
 
@@ -156,9 +157,9 @@
     border-radius: 15px;
 
     background-color: #155F95;
-} 
+}
 
-.mvv .mission h3{
+.mvv .mission h3 {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -170,9 +171,9 @@
     color: white;
 
     margin: 0px 0px 0px 5px;
-} 
+}
 
-.mvv .mission p{
+.mvv .mission p {
     font-family: PoppinsLight;
     font-size: 16px;
 
@@ -182,9 +183,9 @@
     text-align: justify;
 
     padding: 0px 15px 0px 10px;
-} 
+}
 
-.mvv .vision{
+.mvv .vision {
     width: 22%;
     height: 180px;
 
@@ -195,9 +196,9 @@
     background-color: white;
 
     border: 2px solid #155F95;
-} 
+}
 
-.mvv .vision h3{
+.mvv .vision h3 {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -209,9 +210,9 @@
     color: #155F95;
 
     margin: 0px 0px 0px 5px;
-} 
+}
 
-.mvv .vision p{
+.mvv .vision p {
     font-family: Poppins;
     font-size: 16px;
 
@@ -221,9 +222,9 @@
     text-align: justify;
 
     padding: 0px 10px 0px 10px;
-} 
+}
 
-.mvv .values{
+.mvv .values {
     width: 22%;
     height: 180px;
 
@@ -232,9 +233,9 @@
     border-radius: 15px;
 
     background-color: #155F95;
-} 
+}
 
-.mvv .values h3{
+.mvv .values h3 {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -246,17 +247,82 @@
     color: white;
 
     margin: 0px 0px 0px 5px;
-} 
+}
 
 .mvv .values ul {
-    list-style-type: disc; 
+    list-style-type: disc;
     padding-left: 10px;
-    margin-top: 5px;   
-    margin-left: 18px;  
+    margin-top: 5px;
+    margin-left: 18px;
 }
 
 .mvv .values ul li {
     font-family: PoppinsLight;
     font-size: 14px;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0px 20px;
+    }
+
+    .title-page {
+        height: 100px;
+    }
+
+    .title-page h1 {
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    .about-us {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about-us .about-text {
+        width: 90vw;
+    }
+
+    .about-us .about-text h3 {
+        font-size: 20px;
+    }
+
+    .about-us .about-text h1 {
+        font-size: 30px;
+    }
+
+    .about-us .about-text p {
+        font-size: 15px;
+    }
+
+    .about-us .about-text button {
+        font-size: 15px;
+        width: 65%;
+
+        margin: 15px 0px;
+    }
+
+    .about-us #about {
+        width: 90vw;
+    }
+
+    .mvv {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .mvv .mission {
+        width: 80%;
+    }
+
+    .mvv .vision {
+        width: 80%;
+    }
+
+    .mvv .values {
+        width: 80%;
+    }
 }

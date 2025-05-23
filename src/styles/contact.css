@@ -1,63 +1,63 @@
 /* Fonts */
 @font-face {
-    font-family: Montserrat;
-    src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
 }
 
 @font-face {
-    font-family: MontserratLight;
-    src: url(../assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf);
+  font-family: MontserratLight;
+  src: url(../assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf);
 }
 
 
 @font-face {
-    font-family: MontserratBold;
-    src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+  font-family: MontserratBold;
+  src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
 }
 
 @font-face {
-    font-family: MontserratSemiBold;
-    src: url(../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+  font-family: MontserratSemiBold;
+  src: url(../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
-    font-family: Poppins;
-    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
-    font-family: PoppinsLight;
-    src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+  font-family: PoppinsLight;
+  src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
 }
 
 /* Home */
 
 .title-page {
-    margin-top: 20px;
+  margin-top: 20px;
 
-    width: 100vw;
-    height: 200px;
+  width: 100vw;
+  height: 200px;
 
-    background-image: url(./../assets/images/contact_title.svg);
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
+  background-image: url(./../assets/images/contact_title.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.title-page h1{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+.title-page h1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 
-    font-family: MontserratBold;
+  font-family: MontserratBold;
 
-    color: #ffffff;
-    font-size: 80px;
+  color: #ffffff;
+  font-size: 80px;
 
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -77,7 +77,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  
+
   max-height: 300px;
 }
 
@@ -93,7 +93,7 @@
 }
 
 label {
-    font-family: Poppins;
+  font-family: Poppins;
   margin-bottom: 4px;
   font-weight: 500;
 }
@@ -109,8 +109,8 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-    font-family: Poppins;
-  color: #155F95; 
+  font-family: Poppins;
+  color: #155F95;
 }
 
 
@@ -120,31 +120,31 @@ textarea {
 }
 
 .submit-button {
-    width: 50%;
-    background-color: #155F95;
-    border: none;
+  width: 50%;
+  background-color: #155F95;
+  border: none;
 
-    padding: 10px;
+  padding: 10px;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    font-family: Poppins;
-    color: #ffffff;
-    font-size: 18px;
+  font-family: Poppins;
+  color: #ffffff;
+  font-size: 18px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .submit-button:hover {
-    background-color: #0f6cad !important;
+  background-color: #0f6cad !important;
 }
 
 .submit-button .seta {
-    margin-left: 20px;
-    font-size: 18px;
-    display: inline-block;
+  margin-left: 20px;
+  font-size: 18px;
+  display: inline-block;
 }
 
 .contact-details {
@@ -156,21 +156,21 @@ textarea {
 }
 
 .info-section h3 {
-    font-family: Poppins;
+  font-family: Poppins;
   margin-bottom: 8px;
   font-size: 18px;
   color: #1a1a1a;
 }
 
 .info-section p {
-    font-family: PoppinsLight;
+  font-family: PoppinsLight;
   margin: 6px 0;
 }
 
 .info-section iframe {
-    border-radius: 15px;
-    width: 80%;
-    filter: drop-shadow(10px 10px #155F95);
+  border-radius: 15px;
+  width: 80%;
+  filter: drop-shadow(10px 10px #155F95);
 }
 
 .info-section img {
@@ -178,4 +178,43 @@ textarea {
   max-width: 300px;
   border-radius: 8px;
   margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    margin: 0px 20px;
+  }
+
+  .title-page {
+    height: 100px;
+  }
+
+  .title-page h1 {
+    font-size: 36px;
+    margin-left: 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .submit-button {
+    width: 90%;
+  }
+
+  .contact-details {
+    margin-top: 150px;
+  }
+
+  .contact-container {
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 0px;
+    margin-top: 20px;
+    /* max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap; */
+  }
 }
