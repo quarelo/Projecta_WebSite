@@ -50,7 +50,7 @@ body {
 
 /* HEADER */
 
-.header-section{
+.header-section {
     width: 100vw;
 
     margin-top: 20px;
@@ -60,20 +60,20 @@ body {
     justify-content: space-between;
 }
 
-.header-section .header-nav{
+.header-section .header-nav {
     width: 40%;
 
     display: flex;
     justify-content: space-between;
 }
 
-.active{
+.active {
     font-family: MontserratSemiBold !important;
 
     color: #155F95 !important;
 }
 
-.header-section .header-nav a{
+.header-section .header-nav a {
     font-family: Montserrat;
 
     color: black;
@@ -85,15 +85,65 @@ body {
 }
 
 
-.header-section .header-nav a:hover{
+.header-section .header-nav a:hover {
     font-family: MontserratSemiBold;
 
     color: #155F95;
 }
 
+#menuToggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .layout-grid {
+        width: 100%;
+    }
+
+    #menuToggle {
+        display: flex;
+        width: 10%;
+    }
+
+    .header-section {
+        width: 100vw;
+        padding: 0px 20px;
+    }
+
+    .header-nav {
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        background-color: white;
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .header-nav.open {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}
+
 /* FOOTER */
 
-footer{
+footer {
     background-color: #0A3859;
 
     width: 100vw;
@@ -107,33 +157,33 @@ footer{
     justify-content: space-around;
 }
 
-footer .footer-section{
+footer .footer-section {
     display: flex;
     justify-content: space-between;
 }
 
-footer .footer-section .footer-links{
+footer .footer-section .footer-links {
     justify-content: space-between;
     width: 50%;
 }
 
-footer .footer-section .footer-links #logo{
+footer .footer-section .footer-links #logo {
     width: 150px;
 }
 
-footer .footer-section .footer-nav{
+footer .footer-section .footer-nav {
     display: flex;
     height: 60%;
 
     margin-top: 10px;
 }
 
-footer .footer-section .footer-nav nav{
+footer .footer-section .footer-nav nav {
     display: flex;
     flex-direction: column;
 }
 
-footer .footer-section .footer-nav nav h4{
+footer .footer-section .footer-nav nav h4 {
     font-family: Montserrat;
     font-size: 20px;
     color: white;
@@ -141,7 +191,7 @@ footer .footer-section .footer-nav nav h4{
     margin-bottom: 10px;
 }
 
-footer .footer-section .footer-nav nav a{
+footer .footer-section .footer-nav nav a {
     font-family: Poppins;
     font-size: 14px;
     color: white;
@@ -154,7 +204,7 @@ footer .footer-section .footer-nav nav a{
     align-items: center;
 }
 
-footer .footer-section .footer-links .nav-midia h4{
+footer .footer-section .footer-links .nav-midia h4 {
     font-family: Montserrat;
     font-size: 20px;
     color: white;
@@ -162,13 +212,13 @@ footer .footer-section .footer-links .nav-midia h4{
     margin-bottom: 10px;
 }
 
-footer .footer-section .footer-nav nav a img{
+footer .footer-section .footer-nav nav a img {
     margin-right: 10px;
 
     width: 20px;
 }
 
-footer .footer-section .footer-links .nav-midia nav{
+footer .footer-section .footer-links .nav-midia nav {
     display: flex;
     align-items: start;
     flex-direction: row;
@@ -176,26 +226,26 @@ footer .footer-section .footer-links .nav-midia nav{
     margin-top: 10px;
 }
 
-footer .footer-section .footer-text{
+footer .footer-section .footer-text {
     display: flex;
     align-items: start;
 
     width: 55%;
-    height:50%;
+    height: 50%;
 }
 
-footer .footer-section .footer-text img{
+footer .footer-section .footer-text img {
     width: 300px;
 }
 
-footer .footer-section .footer-text .contactUs h3{
+footer .footer-section .footer-text .contactUs h3 {
     font-family: Poppins;
     font-size: 30px;
 
     color: white;
 }
 
-footer .footer-section .footer-text .contactUs p{
+footer .footer-section .footer-text .contactUs p {
     font-family: Poppins;
     font-size: 14px;
 
@@ -206,7 +256,7 @@ footer .footer-section .footer-text .contactUs p{
     color: white;
 }
 
-footer .copyright{
+footer .copyright {
     font-family: PoppinsLight;
     font-size: 12px;
 
@@ -220,3 +270,20 @@ footer .copyright{
     padding-top: 15px;
 }
 
+@media screen and (max-width: 768px) {
+    .footer-section {
+        padding: 0px 20px;
+    }
+
+    footer .footer-section .footer-text {
+        display: none;
+    }
+
+    footer .footer-section .footer-links #logo {
+        display: none;
+    }
+
+    footer .footer-section .footer-links .nav-midia {
+        margin-left: 20px;
+    }
+}

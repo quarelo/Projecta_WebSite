@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecta - Contato</title>
+  <link rel="stylesheet" href="/src/styles/header-footer.css">
+  <link rel="stylesheet" href="/src/styles/contact.css">
+</head>
+
+<body>
+  <header>
+    <div class="layout-grid header-section">
+      <a href="/index.html"><img id="logo" src="/src/assets/images/logotipo.svg" alt="Logo Projecta"></a>
+
+      <nav class="header-nav">
+        <a href="./../../index.html">Home</a>
+        <a href="./about_us.html">Quem Somos</a>
+        <a href="./services.html">Serviços</a>
+        <a href="./contact.html" class="active">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="title-page">
+    <h1>Converse conosco</h1>
+  </section>
+
+  <div class="layout-grid contact-container">
+    <form class="contact-form" action="https://seuservidor.com/enviar-email" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first-name">Nome:</label>
+          <input type="text" id="first-name" name="firstName" placeholder="Primeiro nome" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Sobrenome:</label>
+          <input type="text" id="last-name" name="lastName" placeholder="Último nome" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email aqui..." required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" placeholder="Escreva sua mensagem..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">ENVIE SUA MENSAGEM<span class="seta">&#8594;</span> </button>
+    </form>
+
+    <div class="contact-details">
+      <div class="info-section">
+        <h3>Converse conosco:</h3>
+        <p>📧 contato@projetosprojecta.com.br</p>
+        <p>📞 (19) 2042-4416</p>
+      </div>
+
+      <div class="info-section">
+        <h3>Visite-nos:</h3>
+        <p>Rua José Conti, No. 20 – Centro – Socorro, SP</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.470555194939!2d-46.52808718502276!3d-22.74418898509145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8f75d09c96e1f%3A0x0!2sRua%20Jos%C3%A9%20Conti%2C%2020%20-%20Centro%2C%20Socorro%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1626263292000!5m2!1spt-BR!2sbr"
+          width="100%" height="200" style="border:0; margin-bottom: 20px;" allowfullscreen="" loading="lazy"></iframe>
+
+        <p>Sala 236, 2º andar, Oscar Plaza Shopping<br>
+          Rua Pedro Vieira e Silva, No. 100 – Serra Negra, SP</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.470555194939!2d-46.59808718502276!3d-22.74418898509145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8f75d09c96e1f%3A0x0!2sRua%20Pedro%20Vieira%20e%20Silva%2C%20100%20-%20Serra%20Negra%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1626263320000!5m2!1spt-BR!2sbr"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="layout-grid footer-section">
+      <div class="footer-links">
+        <a href="/index.html"><img id="logo" src="/src/assets/images/negative_logotipo.svg" alt="Logo Projecta"></a>
+
+        <div class="footer-nav">
+          <nav>
+            <h4>Contato</h4>
+            <a href="/src/pages/sobre_nos.html"><img src="/src/assets/images/phone_icon.svg" alt="">(19)
+              2042-4416</a>
+            <a href="/src/pages/produtos.html"><img src="/src/assets/images/mail_icon.svg"
+                alt="">contato@projetosprojecta.com.br</a>
+            <a href="/src/pages/equipe.html"><img src="/src/assets/images/map_icon.svg" alt="">Rua José
+              Conti, No. 20 - Centro - Socorro, SP</a>
+            <a href="/src/pages/contato.html"><img src="/src/assets/images/map_icon.svg" alt="">Sala 236, 2º
+              andar, Oscar Plaza Shopping
+              <br> Rua Pedro Vieira e Silva, No. 100 - Serra Negra, SP</a>
+          </nav>
+
+          <div class="nav-midia">
+            <h4>Rede Sociais</h4>
+            <nav>
+              <a href="/src/pages/sobre_nos.html"><img src="/src/assets/images/instagram_icon.svg" alt=""
+                  style="width: 30px; margin-right: 15px;"></a>
+              <a href="/src/pages/produtos.html"><img src="/src/assets/images/facebook_icon.svg" alt=""
+                  style="width: 17px;"></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-text">
+        <div class="contactUs">
+          <h3>Converse conosco</h3>
+          <p>Estamos prontos para transformar suas ideias em realidade. Entre em contato e descubra como
+            podemos colaborar no seu projeto. </p>
+        </div>
+
+        <img src="/src/assets/images/footer_image.svg" alt="">
+      </div>
+    </div>
+
+    <h5 class="copyright">© Copyright © Projetos Projecta, Todos os Direitos Reservados.</h5>
+  </footer>
+
+  <script src="/src/scripts/server.js"></script>
+</body>
+
+</html>

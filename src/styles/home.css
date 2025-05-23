@@ -71,7 +71,7 @@
 
     margin-bottom: 65px;
 
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
@@ -82,7 +82,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
     z-index: 1;
 }
 
@@ -100,7 +100,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -178,7 +178,7 @@
 }
 
 .nav-button {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border: none;
     padding: 15px;
     cursor: pointer;
@@ -186,7 +186,7 @@
 }
 
 .nav-button:hover {
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .home-about {
@@ -257,11 +257,11 @@
     width: 50%;
 }
 
-.home-services{
+.home-services {
     margin-top: 30px;
 }
 
-.home-services h2{
+.home-services h2 {
     font-family: Montserrat;
     font-size: 30px;
 
@@ -320,7 +320,7 @@
     cursor: pointer;
 }
 
-.service:hover{
+.service:hover {
     transform: scale(1.02);
 }
 
@@ -351,6 +351,73 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.85);
 }
 
-.service .icon:hover{
+.service .icon:hover {
     background-color: #0f6cad !important;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0px 20px;
+    }
+
+    .carousel-container {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .carousel-slide {
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .carousel-slide h1 {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    .carousel-slide .slide-overlay {
+        display: none;
+    }
+
+    .home-about {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .home-about .about-text {
+        width: 90vw;
+    }
+
+    .home-about .about-text h3 {
+        font-size: 20px;
+    }
+
+    .home-about .about-text h1 {
+        font-size: 30px;
+    }
+
+    .home-about .about-text p {
+        font-size: 15px;
+    }
+
+    .home-about .about-text button {
+        font-size: 15px;
+        width: 50%;
+
+        margin: 15px 0px;
+    }
+
+    .home-about #about {
+        width: 90vw;
+    }
+
+    .home-services h2 {
+        font-weight: 300;
+    }
+
+
+    .home-services .services-grid {
+        display: flex;
+        flex-direction: column;
+    }
 }

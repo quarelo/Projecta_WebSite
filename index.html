@@ -14,11 +14,13 @@
         <div class="layout-grid header-section">
             <a href="/index.html"><img id="logo" src="/src/assets/images/logotipo.svg" alt="Logo Projecta"></a>
 
-            <nav class="header-nav">
+            <img id="menuToggle" src="/src/assets/images/menu_mobile.svg" alt="Menu de Navegação">
+
+            <nav class="header-nav" id="navMenu">
                 <a href="" class="active">Home</a>
-                <a href="">Quem Somos</a>
-                <a href="">Serviços</a>
-                <a href="">Contato</a>
+                <a href="./src/pages/about_us.html">Quem Somos</a>
+                <a href="./src/pages/services.html">Serviços</a>
+                <a href="./src/pages/contact.html">Contato</a>
             </nav>
         </div>
     </header>
@@ -28,22 +30,28 @@
             <div class="carousel-slide" style="background-image: url('./src/assets/images/home_banner_01.svg')">
                 <h1>Interiores</h1>
                 <div class="slide-overlay">
-                    <p>Projeto de ambientação que personaliza espaços com marcenaria, mobiliário, revestimentos e iluminação</p>
-                    <button>Saiba Mais<span class="seta">&#8594;</span></button>
+                    <p>Projeto de ambientação que personaliza espaços com marcenaria, mobiliário, revestimentos e
+                        iluminação</p>
+                    <button onclick="window.location.href='./src/pages/services.html'">Saiba Mais<span
+                            class="seta">&#8594;</span></button>
                 </div>
             </div>
             <div class="carousel-slide" style="background-image: url('./src/assets/images/home-banner_02.jpg')">
                 <h1>Projetos Arquitetônicos</h1>
                 <div class="slide-overlay">
-                    <p>Projeto arquitetônico que integra estética, funcionalidade e adequação às normas, atendendo às demandas do cliente.</p>
-                    <button>Saiba Mais <span class="seta">&#8594;</span></button>
+                    <p>Projeto arquitetônico que integra estética, funcionalidade e adequação às normas, atendendo às
+                        demandas do cliente.</p>
+                    <button onclick="window.location.href='./src/pages/services.html'">Saiba Mais <span
+                            class="seta">&#8594;</span></button>
                 </div>
             </div>
             <div class="carousel-slide" style="background-image: url('./src/assets/images/home-banner_03.jpg')">
                 <h1>Paisagismo</h1>
                 <div class="slide-overlay">
-                    <p>Projeto paisagístico que harmoniza arquitetura e perfil do cliente, promovendo humanização por meio da vegetação.</p>
-                    <button>Saiba Mais <span class="seta">&#8594;</span></button>
+                    <p>Projeto paisagístico que harmoniza arquitetura e perfil do cliente, promovendo humanização por
+                        meio da vegetação.</p>
+                    <button onclick="window.location.href='./src/pages/services.html'">Saiba Mais <span
+                            class="seta">&#8594;</span></button>
                 </div>
             </div>
         </div>
@@ -56,32 +64,40 @@
 
         <div class="about-text">
             <h3>Bem-Vindo</h3>
-            <h1>Somos a Projecta <br> Projetos e <br> Construção</h1>
-            <p>Com sede em Socorro e Serra Negra localizadas no Circuitos das Águas Paulista, a Projecta conta com uma equipe multidisciplinar qualificada e à disposição para te atender cada vez melhor e de forma mais completa na realização do seu sonho.</p>
-            <button>Saiba Mais<span class="seta">&#8594;</span></button>
+            <h1>Somos a Projecta Projetos e Construção</h1>
+            <p>Com sede em Socorro e Serra Negra localizadas no Circuitos das Águas Paulista, a Projecta conta com uma
+                equipe multidisciplinar qualificada e à disposição para te atender cada vez melhor e de forma mais
+                completa na realização do seu sonho.</p>
+            <button onclick="window.location.href='./src/pages/about_us.html'">Saiba Mais<span
+                    class="seta">&#8594;</span></button>
         </div>
     </section>
 
     <section class="home-services layout-grid">
         <h2>NOSSOS SERVIÇOS</h2>
         <div class="services-grid">
-            <div class="service" data-id="1" style="background-image: url('./src/assets/images/eletricos.svg')">
+            <div onclick="window.location.href='./src/pages/services.html'" class="service" data-id="1"
+                style="background-image: url('./src/assets/images/eletricos.svg')">
                 <div class="text">HELÉTRICOS E HIDROSSANITÁRIOS</div>
                 <div class="icon">↗</div>
             </div>
-            <div class="service" data-id="2" style="background-image:  url('./src/assets/images/arquitetonicos.svg')">
+            <div onclick="window.location.href='./src/pages/services.html'" class="service" data-id="2"
+                style="background-image:  url('./src/assets/images/arquitetonicos.svg')">
                 <div class="text">PROJETOS <br> ARQUITETÔNICOS</div>
                 <div class="icon">↗</div>
             </div>
-            <div class="service" data-id="3" style="background-image: url('./src/assets/images/obras.svg')">
+            <div onclick="window.location.href='./src/pages/services.html'" class="service" data-id="3"
+                style="background-image: url('./src/assets/images/obras.svg')">
                 <div class="text">EXECUÇÃO <br>DE OBRAS</div>
                 <div class="icon">↗</div>
             </div>
-            <div class="service" data-id="4" style="background-image: url('./src/assets/images/estrutural.svg')">
+            <div onclick="window.location.href='./src/pages/services.html'" class="service" data-id="4"
+                style="background-image: url('./src/assets/images/estrutural.svg')">
                 <div class="text">ESTRUTURAL</div>
                 <div class="icon">↗</div>
             </div>
-            <div class="service" data-id="5" style="background-image: url('./src/assets/images/paisagismo.svg')">
+            <div onclick="window.location.href='./src/pages/services.html'" class="service" data-id="5"
+                style="background-image: url('./src/assets/images/paisagismo.svg')">
                 <div class="text">PAISAGISMO <br> NATURAL</div>
                 <div class="icon">↗</div>
             </div>
@@ -123,7 +139,8 @@
             <div class="footer-text">
                 <div class="contactUs">
                     <h3>Converse conosco</h3>
-                    <p>Estamos prontos para transformar suas ideias em realidade. Entre em contato e descubra como podemos colaborar no seu projeto. </p>
+                    <p>Estamos prontos para transformar suas ideias em realidade. Entre em contato e descubra como
+                        podemos colaborar no seu projeto. </p>
                 </div>
 
                 <img src="/src/assets/images/footer_image.svg" alt="">

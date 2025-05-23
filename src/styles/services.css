@@ -1,0 +1,182 @@
+/* Fonts */
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf);
+}
+
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
+/* Home */
+
+.title-page {
+    margin-top: 20px;
+
+    width: 100vw;
+    height: 200px;
+
+    background-image: url(./../assets/images/services_title.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.title-page h1{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    font-family: MontserratBold;
+
+    color: #ffffff;
+    font-size: 80px;
+
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.services{
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+.services .service_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: #09304C27;
+
+    border-radius: 15px;
+}
+
+.services .service_card img{
+    width: 45%;
+
+    border-radius: 15px;
+}
+
+.services .service_card div{
+    width: 50%;
+    height: 320px;
+
+    margin-right: 20px;
+}
+
+.services .service_card div h3{
+    font-family: MontserratBold;
+    font-size: 30px;
+
+    text-transform: uppercase;
+    color: #155F95;
+}
+
+.services .service_card div p{
+    font-family: Poppins;
+    font-size: 16px;
+
+    color: black;
+
+    margin-top: 20px;
+}
+
+.services .service_card2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+
+    border-radius: 15px;
+}
+
+.services .service_card:hover{
+    transform: scale(1.01);
+}
+
+.services .service_card2:hover{
+    transform: scale(1.01);
+}
+
+.services .service_card2 img{
+    width: 45%;
+}
+
+.services .service_card2 div{
+    width: 50%;
+    height: 320px;
+
+    margin-left: 20px;
+}
+
+.services .service_card2 div h3{
+    font-family: MontserratBold;
+    font-size: 30px;
+
+    text-transform: uppercase;
+    color: #155F95;
+}
+
+.services .service_card2 div p{
+    font-family: Poppins;
+    font-size: 16px;
+
+    color: black;
+
+    margin-top: 20px;
+}
+
+button {
+    width: 40%;
+    background-color: #155F95;
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 60px;
+}
+
+button:hover {
+    background-color: #0f6cad !important;
+}
+
+button .seta {
+    margin-left: 8px;
+    font-size: 18px;
+    display: inline-block;
+}

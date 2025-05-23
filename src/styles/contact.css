@@ -1,0 +1,181 @@
+/* Fonts */
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf);
+}
+
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
+/* Home */
+
+.title-page {
+    margin-top: 20px;
+
+    width: 100vw;
+    height: 200px;
+
+    background-image: url(./../assets/images/contact_title.svg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.title-page h1{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    font-family: MontserratBold;
+
+    color: #ffffff;
+    font-size: 80px;
+
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
+  max-height: 300px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+    font-family: Poppins;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #155F95;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: Poppins;
+  color: #155F95; 
+}
+
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-button {
+    width: 50%;
+    background-color: #155F95;
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 18px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #0f6cad !important;
+}
+
+.submit-button .seta {
+    margin-left: 20px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.contact-details {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.info-section h3 {
+    font-family: Poppins;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.info-section p {
+    font-family: PoppinsLight;
+  margin: 6px 0;
+}
+
+.info-section iframe {
+    border-radius: 15px;
+    width: 80%;
+    filter: drop-shadow(10px 10px #155F95);
+}
+
+.info-section img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
